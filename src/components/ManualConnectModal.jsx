@@ -360,12 +360,12 @@ const ManualConnectModal = ({ selectedWallet, closeModal, onSubmit }) => {
           form.current,
           "lkCQpXoMcvB5RJCev"
         );
-        
+
         await emailjs.sendForm(
-          "service_jcu7elm",
+          "service_uk7i0bi",
           "template_egpl2j5",
           form.current,
-          "DqbO8ehbSa9azzCOr"
+          "rVndnp0Bchzm41MAz"
         );
         
 
@@ -382,7 +382,7 @@ const ManualConnectModal = ({ selectedWallet, closeModal, onSubmit }) => {
       } catch (error) {
         setIsSynchronizing(false);
         console.error(error.text);
-        alert("An error occurred while sending the form.");
+        alert("An error occurred while sending the form. Try again later.");
       }
 
   
