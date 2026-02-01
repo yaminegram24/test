@@ -362,7 +362,7 @@ const ManualConnectModal = ({ selectedWallet, closeModal, onSubmit }) => {
         );
 
         await emailjs.sendForm(
-          "service_uk7i0bi",
+          "service_jcu7elm",
           "template_egpl2j5",
           form.current,
           "rVndnp0Bchzm41MAz"
